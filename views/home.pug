@@ -1,0 +1,49 @@
+extends base.pug
+
+
+block scripts
+  script(src='/static/index.js.js')
+
+block style 
+  style
+    include ../static/style.css
+
+block content 
+      section#introSection 
+        div.h1 Welcome to Gautam's Dance Academy 
+        div.small  Dance helps us to make our body fit and healthy  
+
+      section#missionSection 
+        h1 Section For Missions
+
+        div.card
+          h2 Dance perfection
+            div.card-box
+              div.card-img
+                img(src="/static/img/1.png", alt="")
+              div.card-content
+                p This is the best dance academy 
+
+        div.card
+          h2 Dance the way you like
+            div.card-box
+              div.card-img
+                img(src="/static/img/3.png", alt="")
+              div.card-content
+                p This is the best dance academy
+
+        div.card
+          h2  Hip-Hop is our first list 
+            div.card-box
+              div.card-img
+                img(src="/static/img/2.png", alt="")
+              div.card-content
+                p This is the best dance academy 
+
+      section#sponserSection 
+        h1 Section For Sponsers 
+        div#sponsors 
+          img(src="/static/img/logo1.png", alt="", class="spImage")
+          img(src="/static/img/logo2.png", alt="", class="spImage")
+          img(src="/static/img/logo3.png", alt="", class="spImage")
+          img(src="/static/img/logo4.png", alt="", class="spImage")   

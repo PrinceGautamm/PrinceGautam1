@@ -1,0 +1,65 @@
+//- index.pug
+doctype html
+html
+  head
+    title Gautam Dance Academy | Home 
+    style
+      include ../static/style.css
+      
+    body
+      nav#navbar.top
+        ul
+          div#logo
+            img(src="/static/img/logo.png", alt="")
+            | GDA 
+          li #[a(href="/") Home]
+          li #[a(href="/") About]
+          li #[a(href="/") Contact]
+          li #[a(href="/") Services]
+          li #[a(href="/") Class Info]
+
+      section#introSection 
+        div Welcome to Gautam's Dance Academy 
+        div.small  Dance helps us to make our body fit and healthy  
+
+      section#missionSection 
+        h1 Section For Missions
+
+        div.card
+          h2 Dance perfection
+            div.card-box
+              div.card-img
+                img(src="/static/img/1.png", alt="")
+              div.card-content
+                p This is the best dance academy 
+
+        div.card
+          h2 Dance the way you like
+            div.card-box
+              div.card-img
+                img(src="/static/img/3.png", alt="")
+              div.card-content
+                p This is the best dance academy
+
+        div.card
+          h2  Hip-Hop is our first list 
+            div.card-box
+              div.card-img
+                img(src="/static/img/2.png", alt="")
+              div.card-content
+                p This is the best dance academy 
+
+      section#sponserSection 
+        h1 Section For Sponsers 
+        div#sponsors 
+          img(src="/static/img/logo1.png", alt="", class="spImage")
+          img(src="/static/img/logo2.png", alt="", class="spImage")
+          img(src="/static/img/logo3.png", alt="", class="spImage")
+          img(src="/static/img/logo4.png", alt="", class="spImage")
+           
+
+      footer#footer 
+        | Copyright 2021 @Gautam-Dance-Academy | All rights reserved 
+
+      script
+        include ../static/index.js
